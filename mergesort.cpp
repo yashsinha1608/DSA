@@ -40,7 +40,7 @@ void mS(vector<int> &arr, int low, int high) {
     merge(arr, low, mid, high);
 }
 
-void mergesort(vector<int> &arr, int n) {
+void mergesort(vector<int> &arr,  int n) {
     mS(arr, 0, n - 1);
 }
 
