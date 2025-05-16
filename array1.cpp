@@ -2,6 +2,18 @@
 using namespace std;
 int main(){
     
-    int arr[5]={5,2,5,4,1};
-    cout<<arr[0];
+int n;
+cout<<"enter the size of array";
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++){
+    cin>>arr[i];
+}
+    int large=arr[0];
+for(int i=0;i<n;i++){
+    if(arr[i]>large){
+        large=arr[i];
+    }
+}
+cout<<large;
 }
