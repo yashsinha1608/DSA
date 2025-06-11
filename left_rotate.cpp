@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 /*int main(){
     int n;
@@ -29,7 +30,7 @@ using namespace std;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     } 
-    for(int i=0;i<d;i++){
+    /*for(int i=0;i<d;i++){
         temp[i]=arr[i];
     }
     for(int i=d;i<n;i++){
@@ -37,8 +38,12 @@ using namespace std;
     }
     for(int i=0;i<d;i++){
         arr[n-d+i] = temp[i];
-    }
+}*/ 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
-    } 
+    
+ reverse(arr,arr+d);
+ reverse(arr+d,arr+n);
+  reverse(arr,arr+n);
+ } 
 }
