@@ -39,11 +39,13 @@ using namespace std;
     for(int i=0;i<d;i++){
         arr[n-d+i] = temp[i];
 }*/ 
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+    //for(int i=0;i<n;i++){
+      //  cout<<arr[i]<<" ";
     
  reverse(arr,arr+d);
  reverse(arr+d,arr+n);
   reverse(arr,arr+n);
+  for(int i=0;i<n;i++){
+      cout<<arr[i]<<" ";
  } 
 }
