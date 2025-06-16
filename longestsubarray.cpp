@@ -10,14 +10,12 @@ int main(){
         cin>>arr[i];
     } 
     for (int i=0;i<n;i++){
+        int sum=0;
         for(int j=i;j<n;j++){
-            int sum=0;
-            for(int k=i;k<n;k++){
-                sum=sum+arr[k];{
+                sum=sum+arr[j];{
                     if(sum==k){
                         lenght=max(lenght,j-i+1);
                     }
-                }
             }
         }
     }
