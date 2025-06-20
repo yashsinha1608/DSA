@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-int main(){
+// better solution 
+/*int main(){
     int n,m;
     cin>>n;
     cin>>m;
-    int arr[n][m];
     int row[n];
     int col[m];
   int arr[n][m];
@@ -27,6 +27,20 @@ int main(){
             arr[i][j]=0;
         }
 
+    }
+    } 
+
+}*/
+
+// optimal solution
+int main(){
+    int n,m;
+    cin>>n;
+    cin>>m;
+    int arr[n][m];
+  for(int i=0;i<n;i++){
+    for (int j=0;j<m;j++){
+         cin>>arr[i][j];
     }
     } 
 
