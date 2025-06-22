@@ -24,7 +24,7 @@ int main(){
         if(arr[i]==el){
             counter1++;
         }
-        if(count>n/2){
+        if(counter1>n/2){
             return el;
         }
     return -1;
