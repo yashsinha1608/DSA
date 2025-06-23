@@ -1,3 +1,4 @@
+//we used i j k
 #include<iostream>
 #include<algorithm>
 #include<vector>
