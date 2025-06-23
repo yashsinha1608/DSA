@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 int main(){
-     int n,sum,target;
+     int n;
      vector<vector<int>> ans;
     cin>>n;
   int arr[n];
