@@ -41,7 +41,9 @@ using namespace std;
 }*/ 
     //for(int i=0;i<n;i++){
       //  cout<<arr[i]<<" ";
-    
+
+      
+    //optimal code 
  reverse(arr,arr+d);
  reverse(arr+d,arr+n);
   reverse(arr,arr+n);
