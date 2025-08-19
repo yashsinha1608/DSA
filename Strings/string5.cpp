@@ -26,5 +26,4 @@ if(rotation(s1,s2)){
 else{
     cout<<"NO";
 }
-
 }
