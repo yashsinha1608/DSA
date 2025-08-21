@@ -7,9 +7,10 @@ vector<int> delete_duplicate(vector<int>& arr){
     unordered_set<int> set;
     vector<int> ans;
     for(int x:arr){
+         
         if(set.find(x)==set.end()){
             ans.push_back(x);
-            set.insert(x);
+        set.insert(x);
         }
     }
 
