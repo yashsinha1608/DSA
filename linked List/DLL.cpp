@@ -40,6 +40,19 @@ node* delete_first_element(node* head){
     return head;
     }
 
+    node* delete_tail(node* head){
+        node* tail= head;
+        while(tail->next!=NULL){
+            tail=tail->next;
+        }
+       node* prev=tail->back;
+       prev->next=nullptr; 
+       tail->back=nullptr;
+       
+       free(tail);
+        return head;
+    }
+
 int main(){
 
 }
