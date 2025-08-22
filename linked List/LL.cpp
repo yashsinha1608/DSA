@@ -29,6 +29,8 @@ node* convert(vector<int> &arr){
     }
     return head;
 }
+
+
 int lenghth(node* head){
     int cnt=0;
     node* temp=head;
