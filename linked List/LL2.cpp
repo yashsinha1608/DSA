@@ -15,7 +15,7 @@ class node{
 node* creatiion_of_LL(vector<int>& arr){
     node* head=new node(arr[0]);
     node* mover=head;
-    for(int i:arr){
+    for(int i=1;i<arr.size();i++){
 node* temp=new node(arr[i]);
 mover->next=temp;//mover jisko point kar raha hai uski value ko change kar rahe hai 
 mover=temp;

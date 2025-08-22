@@ -25,8 +25,8 @@ public:
 node* creation(vector<int>& arr){
     node* head=new node(arr[0]);
     node* mover=head;
-    for(int x:arr){
-        node* newnode=new node(arr[x]);
+    for(int i=1;i<arr.size();i++){
+        node* newnode=new node(arr[i]);
         mover->next=newnode;
         mover=newnode;
     }
