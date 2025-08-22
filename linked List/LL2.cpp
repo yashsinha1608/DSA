@@ -44,6 +44,71 @@ head=head->next;
     cout<<endl;
 }
 
+
+node* delete_last_element(node* head){
+if(head==NULL||head->next==NULL) return nullptr;
+node* temp=head;
+while(temp->next->next!=NULL){
+    temp=temp->next;
+}
+free(temp->next);
+temp->next=nullptr;
+
+return head;
+}
+
+node* delete_kth_element(node* head,int k){
+    if(head==NULL) return head;
+
+    if(k==1){
+        node* temp1=head;
+        head=head->next;
+        free(temp1);
+        return head;
+    }
+node* temp=head;
+for(int i=1;temp!=NULL && i<k-1;i++){
+temp=temp->next;
+}
+
+
+//if(temp==NULL || temp->next==NULL) return head;
+
+
+node* del=temp->next;
+temp->next=temp->next->next;
+free(del);  
+return head;
+}
+
+//OR
+node* delete_kth_node(node* head,int k){
+      if(head==NULL) return head;
+
+    if(k==1){
+        node* temp1=head;
+        head=head->next;
+        free(temp1);
+        return head;
+    }
+    node* temp=head;
+    node* prev=NULL;
+    int count=0;
+    while(temp!=NULL){
+        count++;
+        if(count==k){
+            prev->next=temp->next;
+            free(temp);
+            break;
+        }
+        prev=temp;
+        temp=temp->next;
+        
+    }
+    return head;
+}
+
+
     int main(){
   vector<int> arr={12,5,7,6,4};
   node* head= creatiion_of_LL(arr);
