@@ -29,7 +29,16 @@ node* creation_DLL(vector<int>& arr){
         prev=temp;
     }
     return head;
+
 }
+node* delete_first_element(node* head){
+     node*temp=head;
+     head=head->next;
+     head->back =nullptr;
+    temp->next=nullptr;
+
+    return head;
+    }
 
 int main(){
 
