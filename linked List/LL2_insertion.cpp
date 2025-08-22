@@ -39,6 +39,48 @@ node* insertion_start(node* head,int x){
 return new1;
 }
 
+void print(node* head){
+    
+    while(head){
+        cout<<head->data<<" ";
+        head=head->next;
+    }
+cout<<endl;
+}
+
+node* insertion_last(node* head,int x){
+    node* temp=head;
+    while(temp->next!=NULL){
+        temp=temp->next;
+    }
+    node* newcreated= new node(x);
+    temp->next=newcreated;
+
+    return head;
+    
+}
+
+node* insertion(node* head,int ele,int k)
+{
+node* temp=head;
+    int count=0;
+    while(temp->next!=NULL){
+        count++;
+        if(count==k-1){
+            node* x=new node(ele,temp->next);
+           
+            temp->next=x;
+
+            break;
+        }
+        else{
+            temp=temp->next;
+        }
+    }
+    return head;
+}
+
+
 
  int main(){
   vector<int> arr={12,5,7,6,4};
