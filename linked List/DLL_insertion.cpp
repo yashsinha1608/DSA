@@ -35,11 +35,15 @@ node* creation_of_dll(vector<int>& arr){
     return head;
 }
 
-node* insertion_at_head(node* head,int x){
+node* insertion_before_head(node* head,int x){
     node* newhead=new node(x,head,nullptr);
     head->back=newhead;
 
     return newhead;
+}
+
+node* before_tail(node* head,int x){
+    
 }
 
 int main(){
