@@ -53,6 +53,28 @@ node* delete_first_element(node* head){
         return head;
     }
 
+node* delete_kth_element(node* head,int k){
+    node*temp=head;
+    int count=0;
+    while(temp->next!=0){
+        count++;
+        if(count==k) break;
+        temp=temp->next;
+    }
+
+    node* prev=temp->back;
+    node* ahead=temp->next;
+    prev->next=ahead;
+    ahead->back=prev;
+
+    temp->next=nullptr;
+    temp->back=nullptr;
+
+    free(temp);
+    return head;
+}
+
+
 int main(){
 
 }
