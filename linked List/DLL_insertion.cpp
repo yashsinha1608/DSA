@@ -43,7 +43,16 @@ node* insertion_before_head(node* head,int x){
 }
 
 node* before_tail(node* head,int x){
-    
+    node* temp=head;
+    while(temp->next!=NULL){
+        temp=temp->next;
+    }
+    node* prev=temp->back;
+    node* insert=new node(x,temp,prev);
+    prev->next=insert;
+    temp->back=insert;
+
+    return head;
 }
 
 int main(){
