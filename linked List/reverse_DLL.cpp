@@ -51,5 +51,5 @@ while(mover!=NULL){
 int main(){
     
 vector<int> arr={12,25,123,7};
-cout<<"HELLO";
+
 }
