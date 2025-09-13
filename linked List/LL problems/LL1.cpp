@@ -1,3 +1,4 @@
+//Finding middle of linked list  // Tortoise hare
 #include<iostream>
 #include<vector>
 
@@ -30,7 +31,32 @@ mover=temp;
 }
 return head;
 }
+
+/*int find_lenght(node* head){
+node* temp=head;
+    int count=0;
+    while(temp!=NULL){
+    temp=temp->next;
+    count++;
+    }
+    return count;
+}*/
+
+node* hair_tortoise(node* head){
+    node* slow=head;
+    node* fast=head;
+    while(fast!=NULL && fast->next!=nullptr){
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    return slow;
+}
+
+
+
 int main(){
     vector<int> arr={1,2,3,21,53,2,4,1};
     node* head=convert(arr);
+
+
 }
