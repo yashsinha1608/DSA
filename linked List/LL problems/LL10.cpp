@@ -54,5 +54,18 @@ node* segmentation (node* head){
             two=temp;
         }
     }
-    
+    if(onehead->next!=NULL){
+        zero->next=onehead->next;
+    }
+    else{
+        zero->next=twohead->next;
+    }
+    one->next=twohead->next;
+    two->next=NULL;
+
+    node* newhead=zerohead->next;
+    delete zerohead;
+    delete onehead;
+    delete twohead;
+    return newhead;
 }
