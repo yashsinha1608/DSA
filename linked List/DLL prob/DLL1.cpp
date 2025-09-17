@@ -33,7 +33,7 @@ node* creation_DLL(vector<int>& arr){
 
 node* delete_key(node* head,int k){
      node* temp = head;
-     while(temp!=head){
+     while(temp!= NULL){
         if(temp->data==k){
         if(temp==head) {
             head=head->next;
