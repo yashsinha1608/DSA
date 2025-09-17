@@ -30,3 +30,34 @@ node* creation_DLL(vector<int>& arr){
     }
     return head;
 }
+
+node* delete_key(node* head,int k){
+     node* temp = head;
+     while(temp!=head){
+        if(temp->data==k){
+        if(temp==head) {
+            head=head->next;
+        }
+        node* prev=temp->back;
+        node* nextnode=temp->next;
+
+        if(prev!=NULL){
+            nextnode->back=prev;
+        }
+        if(nextnode!=NULL){
+            prev->next=nextnode;
+        }
+        free(temp);
+        temp=nextnode;  
+        }
+        else{
+            temp=temp->next;
+        }
+     }
+     return head;
+}
+
+int main()
+{
+    
+}
