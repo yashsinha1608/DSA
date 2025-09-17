@@ -41,7 +41,7 @@ node* add_2_LL(node* l1,node* l2){
 int carry =0;
 int sum=0;
     while(t1!=NULL || t2!=NULL){
-        sum=sum+carry;
+        sum=carry;
         if(t1) sum=sum+t1->data;
         if(t2) sum=sum+t2->data;
         node* sumnode=new node(sum%10);
