@@ -26,6 +26,7 @@ int main() {
     cin >> base >> power;
 
     double ans = pow(base, power);
+    cout<<"I am Yash ";
     cout << ans;
     return 0;
 }
