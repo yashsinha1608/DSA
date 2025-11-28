@@ -15,7 +15,21 @@ string convert_2_binary(int n){
     return res;
 }
 
+int convert_2_decimal(string x){
+    int len= x.length();
+    int num=0;
+    int p2=1;
+    for(int i=len-1;i>=0;i++){
+        if(x[i]=='1'){
+            num=num+p2;
+        }
+        p2=p2*2;
+    }
+    return num;
+}
+
+
 
 int main(){
-
+    
 }
