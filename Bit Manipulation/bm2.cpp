@@ -32,12 +32,7 @@ return ans;
 else{
     return (-1*ans);
 }
-
-
 }
-
-
-
 
 int main(){
 
