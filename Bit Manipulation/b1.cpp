@@ -28,8 +28,25 @@ int convert_2_decimal(string x){
     return num;
 }
 
+int count_set_bit(int x){
+    int count=0;
+    while(x>0){
+    count+= x&1;
+    x=x>>1;
+    }
+    return count;
+}
+
+int count_set_bit_fast(int n){
+    int count =0;
+    while(n>0){
+        n=n&(n-1);
+        count++;
+    }
+    return count;
+}
 
 
 int main(){
-    
+
 }
