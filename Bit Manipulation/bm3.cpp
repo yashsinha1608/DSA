@@ -12,7 +12,6 @@ int flip_bit(int start,int goal){
     return count;
 }
 
-
 int main(){
 
 }
