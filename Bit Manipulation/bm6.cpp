@@ -10,5 +10,8 @@ int  xor_range(int n){
 }
 
 int main(){
-    
+int start;
+int end;
+int ans=xor_range(start-1) ^ xor_range(end);   // find xor form a range start to end 
+
 }
