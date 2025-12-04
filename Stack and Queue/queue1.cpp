@@ -1,7 +1,6 @@
 #include<iostream>
 #include<stack>
 #include<algorithm>
-#include <stack>
 using namespace std;
 
 class MyQueue {
